@@ -1,6 +1,6 @@
 body {background:#ff6600; margin:1em}
 .container {width:960px;}
-h1 {margin:1em;}
 section {margin:1em;}
 .my-buttons {margin:0 auto; text-align:center;}
-.jumbotron {margin:2em;}
+.jumbotron {margin:2em;padding:2rem;font-family: 'Yellowtail', cursive;}
+.jumbotron p {font-size:2em;}
