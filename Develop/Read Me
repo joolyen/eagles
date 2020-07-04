@@ -2,3 +2,31 @@
 
 This homework is a good one to start with. I kept finding things I cloud fix and I am stopping at the mobile layout. I think I caught a lot of issues and they should be pretty well documented in the comments for each commit. I will try and list them below. BTW, if this isn't what you had in mind for the read me file, let me know and I'll adjust. 
 
+Here's the list of my changes, not in order. 
+
+adding a copy of the homework to the repo
+ - I initially needed to add the files to the repo
+initial creation and commit of read me
+ - This was for my description of the homework
+changes footer h2 to h4
+ - putting the heading tags in order as the assignment requested
+updating the page title
+ - I used the title in the footer. It was short enough and descriptive enough
+adding jump links from the nav to the services
+ - I had a typo on this commit, I was adding jump links to the navigation links so they'd link to their respective service sections of the page
+refactoring some of the css classes that were used multiple times
+ - some of the benefits tags and the services css tags could be consolidated into one name and one line of code
+testing different contrast colors
+ - Just trying different color combinations to reach the right contrast levels for accessibility guidelines
+copyright update to 2020
+ - I figured this should be updated to reflect the current year but I may be wrong
+compressed the images to reduce file size for faster load times
+ - I noticed the jpg images we're using were large file sizes and I figure that they could be compresses without end users being able to really tell a different visually. That saved about 80-90% of file size on the 4 jpg images I compressed. You can tell which images they are because I left the .min in the file name but they are the header and the three service images
+Images must have alternate text
+ - Making sure the images had alt tags and text
+adding more contrast to .benefits by darkening blue #09405
+ - This changed worked for constrast but I didn't like it so I adjusted it later
+ 
+ I also removed the "./" that processed the file paths. I've never seen that before, should I be doing that?
+
+
