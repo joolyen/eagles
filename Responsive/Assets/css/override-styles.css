@@ -80,7 +80,7 @@ html {
 }
 
 @media (max-width:641px) {
-    .col-8 {min-width:100%;}
+    .col-8, .col-6 {min-width:100%;}
     .col-8 img {min-width:100%;padding:0;}
     .navbar-brand {min-width:100%;}
     .navbar-expand {margin: 0 auto;}
