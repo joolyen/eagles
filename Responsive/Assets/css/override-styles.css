@@ -1,20 +1,57 @@
-body{background:#dcdcdc url("../Images/textured_paper.png") top left repeat;}
-.border-bottom {border-bottom: 3px solid #cdcdcd!important;}
-p {line-height:2.5em;}
-h3 {text-align:center;}
-.col-8 img {max-width:50%;padding:.5em 1em 0 0;}
-.col-8 .border-bottom {padding:0 0 25px 0;margin:0 0 25px 0;}
+body {
+  background:#dcdcdc url("../Images/textured_paper.png") top left repeat;
+}
+.border-bottom {
+  border-bottom: 3px solid #cdcdcd!important;
+}
+p {
+  line-height:2.5em;
+}
+h3 {
+  text-align:center;
+}
+.col-8 img {
+  max-width:50%;padding:.5em 1em 0 0;
+}
+.col-8 .border-bottom {
+  padding:0 0 25px 0;margin:0 0 25px 0;
+}
 
-.card {margin:1em 0;}
-.card a {width:100%;margin-top:5em;}
-.card-body {padding:2em 0;}
-.card .btn {border-radius: 0 !important;}
+/*--- overriding card styles in portfolio and creating background images for the cards ---*/
+.card {
+  margin:1em 0;
+}
+.card a {
+  width:100%;
+  margin-top:5em;
+}
+.card-body {
+  padding:2em 0;
+}
+.card .btn {
+  border-radius: 0 !important;
+}
 
-.parakeet {background: url("../Images/beautiful-parakeet.jpg");background-size:100%;}
-.bee {background: url("../Images/bee.jpg");background-size:100%;}
-.night {background: url("../Images/night.jpg");background-size:100%;}
-.landscape {background: url("../Images/landscape.jpg");background-size:100%;}
-.rhine {background: url("../Images/rhine.jpg");background-size:100%;}
+.parakeet {
+  background: url("../Images/beautiful-parakeet.jpg");
+  background-size:100%;
+}
+.bee {
+  background: url("../Images/bee.jpg");
+  background-size:100%;
+}
+.night {
+  background: url("../Images/night.jpg");
+  background-size:100%;
+}
+.landscape {
+  background: url("../Images/landscape.jpg");
+  background-size:100%;
+}
+.rhine {
+  background: url("../Images/rhine.jpg");
+  background-size:100%;
+}
 
 /*--- Sticky footer styles --- */
 html {
@@ -36,7 +73,7 @@ html {
   }
   .footer a {color:#fff;}
 
-/*--- Media Queries ---*/
+/*--- Media Queries for tablet and mobile device screen sizes ---*/
 
 @media (max-width:781px) {
     .col-8 {min-width:100%;}
