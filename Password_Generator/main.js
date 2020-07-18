@@ -11,27 +11,27 @@ function generatePassword() {
 
     let userLowercase = confirm("Would you like to use lowercase letters in your password?");   
     if (userLowercase){
-        finalResults.concat(lowerCase);
+        finalResults.push(lowerCase);
     }
     else {
 
     }
     let userUppercase = confirm("Would you like to use uppercase letters in your password?");
-    if (userLowercase){
+    if (userUppercase){
         finalResults.push(upperCase);
     }
     else {
 
     }
     let userNums = confirm("Would you like to use numbers in your password?");
-    if (userLowercase){
+    if (userNums){
         finalResults.push(nums);
     }
     else {
 
     }
     let userSpecialChars = confirm("Would you like to use special characters in your password?");
-    if (userLowercase){
+    if (userSpecialChars){
         finalResults.push(specialChars);
     }
     else {
