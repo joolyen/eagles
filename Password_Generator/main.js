@@ -13,33 +13,18 @@ function generatePassword() {
     let userUppercase = confirm("Would you like to use uppercase letters in your password?");
     let userNums = confirm("Would you like to use numbers in your password?");
     let userSpecialChars = confirm("Would you like to use special characters in your password?");
-    console.log(userLowercase)
-
+    
     if (userLowercase){
-        finalResults = [...lowerCase]
+        finalResults.push(lowerCase);
+    }
+    elseif (userLowercase && userUppercase){
+        finalResults.push(upperCase);
+    }
+    else {
+        finalResults.push(nums) 
     }
 
-    let userUppercase = confirm("Would you like to use uppercase letters in your password?");
-    console.log(userUppercase)
-
-    if (userUppercase){
-        finalResults = [...upperCase]
-    }
-
-    let userNums = confirm("Would you like to use numbers letters in your password?");
-    console.log(userNums)
-
-    if (userNums){
-        finalResults = [...nums]
-    }
-
-    let userUppercase = confirm("Would you like to use uppercase letters in your password?");
-    console.log(userUppercase)
-
-    if (userLowercase){
-        finalResults = [...upperCase]
-    }
-
+    console.log(finalResults);
 
     // randomize finalResults
 
