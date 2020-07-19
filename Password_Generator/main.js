@@ -1,46 +1,50 @@
 
-const lowerCase = [...'abcdefghijklmnopqrstuvwxyz']
-const upperCase = [...'abcdefghijklmnopqrstuvwxyz'.toUpperCase()]
-const nums = [...'0123456789']
-const specialChars = [...'!@#$%^&*()'] 
-let finalResults = []
+var lowerCase = [...'abcdefghijklmnopqrstuvwxyz']
+var upperCase = [...'abcdefghijklmnopqrstuvwxyz'.toUpperCase()]
+var nums = [...'0123456789']
+var specialChars = [...'!@#$%^&*()'] 
+var finalResults = []
 
 console.log(nums, specialChars)
 
 function generatePassword() {
 
-    let userLowercase = confirm("Would you like to use lowercase letters in your password?");   
+    userLowercase = confirm("Would you like to use lowercase letters in your password?");   
     if (userLowercase){
         finalResults.push(lowerCase);
     }
     else {
 
     }
-    let userUppercase = confirm("Would you like to use uppercase letters in your password?");
+    userUppercase = confirm("Would you like to use uppercase letters in your password?");
     if (userUppercase){
         finalResults.push(upperCase);
     }
     else {
 
     }
-    let userNums = confirm("Would you like to use numbers in your password?");
+    userNums = confirm("Would you like to use numbers in your password?");
     if (userNums){
         finalResults.push(nums);
     }
     else {
 
     }
-    let userSpecialChars = confirm("Would you like to use special characters in your password?");
+    userSpecialChars = confirm("Would you like to use special characters in your password?");
     if (userSpecialChars){
         finalResults.push(specialChars);
     }
     else {
 
     }
+
     console.log(finalResults);
 
     // randomize finalResults
 
+    var randomItem = finalResults[Math.floor(Math.random()*finalResults.length)];
+
+    document.body.innerHTML = randomItem;
 
 
     // pick certain items from finalResults 
