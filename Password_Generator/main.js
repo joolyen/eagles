@@ -4,6 +4,7 @@
 // DOM Elements
 const resultEl = document.getElementById('result');
 const generateEl = document.getElementById('generate');
+let result = "";
 
 // Object
 
@@ -23,13 +24,21 @@ if(generateEl){
      });
  }
 
+// Gererate Password function
+function generatePassword(password){
+    const values = Object.values(password)
+    console.log(values);
+    //for(let i = 0; i < password.length; i++){
 
+
+    //}
+}
 
 // Generator functions - http://www.net-comber.com/charset.html
 
 function getPasswordLength(){
      password.length = prompt("Please choose a password between 8 and 128 characters long.");
-     if(length < 8 || length > 128){
+     if(length > 8 || length < 128){
         alert("that's not the right size");
         password.length = prompt("Please choose a password between 8 and 128 characters long.");
      }
@@ -56,6 +65,7 @@ function passwordCriteriaHandler(){
     confirmUppercase();
     confirmNumber();
     confirmSymbol();
+    generatePassword();
 }
 
 function confirmLowercase(){
