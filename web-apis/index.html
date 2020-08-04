@@ -16,6 +16,7 @@
                 <div class="col">
                     <!-- added quiz content div and hopefully everything can live in here -->
                     <div id="quiz-content"></div> 
+                    
                 </div>
                 <div class="col">
                     <h2>Timer</h2>
@@ -34,7 +35,17 @@
 
     // Defining some html elements
     $("#timer").html(timer);  
-    $("#quiz-content").html('<h1>Coding Quiz Challenge</h1><p>Try to answer these Javascript coding questions within the time limit in the top left corner.</p></p><button type="button" class="btn btn-success">Start</button>');
+
+    $("#quiz-content").html('<h1>Coding Quiz Challenge</h1><p>Try to answer these Javascript coding questions within the time limit in the top left corner.</p><button type="button" id="start-quiz" class="btn btn-success">Start</button>');
+
+    $("#start-quiz").on("click", function(){
+        $("#quiz-content").html('<h2>Commonly used Data Types Do Not Include:</h2><button type="button" id="strings" class="btn btn-success">Strings</button><br><br><button type="button" id="booleans" class="btn btn-success">Booleans</button><br><br><button type="button" id="alerts" class="btn btn-success">Alerts</button><br><br><button type="button" id="numbers" class="btn btn-success">Numbers</button>');
+        $(':button').click(function () {
+           if (this.id != 'alert'){
+               alert('WRONG!');
+           } 
+        });
+    });
 
     
 
