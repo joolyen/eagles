@@ -16,8 +16,12 @@ $(".time-block").each(function(){
 });
 
 $('.saveBtn').on('click', function(event){
-     var details = localStorage.getItem($(this));
-     console.log(details);
+
+    var details;
+    localStorage.setItem(($(this)), details);
+
+     
+    console.log(details);
  });
 
 
