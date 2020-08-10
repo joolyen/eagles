@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c693cab066.js" crossorigin="anonymous"></script>
+
     <title>Weather Dashboard</title>
   </head>
   <body>
@@ -16,7 +19,15 @@
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col-4">col-4</div>
+        <div class="col-4">
+          <h3>Search For a City:</h3>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+        </div>
         <div class="col-8">col-8</div>
       </div>
     </div>
